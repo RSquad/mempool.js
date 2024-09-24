@@ -32,7 +32,6 @@
     "dev": "nodemon src/index.ts",
     "build": "tsc",
     "export-mempool-js": "tsc | browserify -p esmify lib/index.js --standalone mempoolJS > dist/mempool.js | browserify -p tinyify -p esmify lib/index.js --standalone mempoolJS > dist/mempool.min.js",
-    "prepare": "npm run build",
     "postversion": "git push && git push --tags"
   },
   "files": [
@@ -58,3 +57,4 @@
   },
   "license": "MIT"
 }
+
